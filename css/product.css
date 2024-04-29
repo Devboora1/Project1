@@ -1,0 +1,260 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./crousal.css);
+@import url(./animation.css);
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center
+  }
+  
+
+#productList{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 300px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.product{
+    height: auto;
+    min-width: 200px;
+    width: auto;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px 2px grey;
+    border-radius: 7px;
+    transition: transform 1s ease 0s;
+}
+.product:hover{
+    transform: perspective(3000px) rotateY(5deg);
+    /* transform: scale(1.02); */
+
+    cursor: pointer;
+}
+.product img {
+    margin: 20px;
+    height: 180px;
+    border-radius:7px ;
+
+}
+
+
+.description{
+    text-align: center;
+    padding: 10px;
+}
+body {
+    margin: 0px;
+    height: 100%;
+    font-family: serif;
+  }
+
+/* Modal Box */
+/* The Modal (background) */
+.modal {
+    /* display: none; Hidden by default */
+    position: fixed; /* Stay in place */
+    /* z-index: 1; Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: -100%;
+    top: -100%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition-timing-function: ease-in-out;
+  }
+.showModal{
+    left: 0;
+    top: 0;
+    display: block;
+    transition: all 1s ease-in-out; /*make it smooth*/
+
+}
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modalProduct {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-left:30px ;
+      /* align-items: center; */
+  }
+
+  .modalImage {
+      height: 80%;
+      width: 50%;
+
+  }
+  .modalImage img {
+      height: 80%;
+      width: 90%;
+      min-width: 220px; 
+      max-height: 540px;
+      border-radius:7px ;
+  }
+
+#productDetail{
+    width: 50%;
+    min-width: 220px;
+    padding: 20px;
+    height: 540px;
+    overflow-y: scroll;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 600px) {
+
+    #productList{
+        /* border: 1px solid black; */
+        height: auto;
+        width: auto;
+        display: flex;
+        margin-top: 60px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .product{
+        height: auto;
+        min-width: 450px;
+        width: auto;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 5px 5px 20px 2px grey;
+        border-radius: 7px;
+        transition: transform 1s ease 0s;
+    }
+    .product img {
+        margin: 20px;
+        height: 500px;
+        border-radius:7px ;
+    
+    }
+    
+    .modalProduct {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  
+    .modalImage {
+        height: 80%;
+        width: 50%;
+        min-width: 180px;
+  
+    }
+    .modalImage img {
+        margin: 20px;
+        height: 80%;
+        width: 90%;
+        max-height: 540px;
+        border-radius:7px ;
+    }
+  
+  #productDetail{
+      width: 50%;
+      min-width: 180px;
+      padding: 20px;
+      height: 540px;
+      overflow-y: scroll;
+  }
+
+}
+
+  @media ( min-width:1000px){
+    #productList{
+        /* border: 1px solid black; */
+        height: auto;
+        width: auto;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .product{
+        height: auto;
+        min-width: 450px;
+        width: auto;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 5px 5px 20px 2px grey;
+        border-radius: 7px;
+        transition: transform 1s ease 0s;
+    }
+    .modalProduct {
+        display: flex;
+        flex-direction: row;
+    }
+  
+    .modalImage {
+        height: 80%;
+        width: 50%;
+  
+    }
+    .modalImage img {
+        margin: 20px;
+        height: 80%;
+        width: 90%;
+        max-height: 540px;
+        border-radius:7px ;
+    }
+  
+  #productDetail{
+      width: 50%;
+      padding: 20px;
+      height: 540px;
+      overflow-y: scroll;
+  }
+      .container{
+          max-width: 1300px;
+      }
+
+  }

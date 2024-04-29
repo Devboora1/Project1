@@ -1,0 +1,99 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./animation.css);
+
+section:nth-child(2n) {
+    background-color: rgb(250, 250, 250);
+}
+
+main{
+    padding-top: 80px;
+}
+
+.upiImage {
+    height: 80%;
+    width: 80vw;
+    border-radius: 15px;
+}
+
+.upiSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upiSection div{
+    margin: 10px;
+}
+
+.accountSection{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paymentHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.paymentHeader img{
+    width: 90%;
+    margin: 20px;
+}
+.paymentText{
+    width: 80vw;
+    padding-left: 20px;
+}
+
+.bankImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.bankImage div{
+    padding: 20px;
+}
+.bankImage img{
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .upiImage {
+        height: 80%;
+        width: 70vw;
+    }
+    .paymentText{
+        width: 40vw;
+        padding-left: 40px;
+    }
+    .paymentHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 40px;
+    }
+    .paymentHeader img{
+        width: 40%;
+    }
+    .bankImage img{
+        display: block;
+        width:20%;
+        border-radius: 20px;
+    }
+
+}
+@media (min-width: 1000px) {
+    .upiImage {
+        height: 80%;
+        width: 40vw;
+    }
+    .paymentText{
+        width: 20vw;
+        padding-left: 40px;
+    }
+
+}

@@ -1,0 +1,159 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./animation.css);
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: serif;
+}
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, 1fr);
+  height: 100vh;
+}
+
+.container {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imageFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imageCard1 img {
+  height: 6rem;
+  width: 15rem;
+}
+
+.imageCard2 img {
+  height: 10rem;
+  width: 20rem;
+}
+
+#dealerFormContainer{
+    box-shadow: 8px 8px 5px grey;
+    margin: 40px;
+}
+#formHeader{
+    display: flex;
+    border-bottom: 1px solid black; 
+    
+
+}
+
+#headerData{
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(45deg, #272F25, #8AAB5E);
+    /* background-color: #272F25; */
+    color: white;
+}
+
+#heading{
+    width: 200px;
+    height: 50px; 
+    padding: 5px; 
+    border-radius: 8px;
+    text-align: center;
+    background-color: #272F25;
+    color: white;
+    
+    
+}
+#heading2{
+    margin-top: 5px;
+}
+#dealerForm {
+    overflow: hidden;
+    height: 1600px;
+    width: 18rem;
+    /* background-color: green; */
+  }
+
+
+.textCardImg img {
+    height: 100%;
+    width: 8rem;
+    box-shadow: 10px 5px 5px #272F25;
+    
+    /* padding: 5px; */
+}
+
+
+@media (min-width: 500px) and (max-width: 659px) {
+    #dealerForm {
+        overflow: hidden;
+        height: 1400px;
+        width: 25rem;
+        /* background-color: green; */
+      }
+  .imageCard1 img {
+    height: 5rem;
+    width: 12rem;
+  }
+
+  .imageCard2 img {
+    height: 10rem;
+    width: 20rem;
+  }
+  .textCardImg img {
+    height: 8rem;
+    width: 8rem;
+    box-shadow: 10px 5px 5px #272F25;
+    
+    /* padding: 5px; */
+}
+}
+
+@media (min-width: 660px) {
+
+
+  #dealerForm {
+    overflow: hidden;
+    height: 1400px;
+    width: 40rem;
+    /* background-color: green; */
+  }
+  .imageCard1 img {
+    height: 8rem;
+    width: 22rem;
+  }
+
+  .imageCard2 img {
+    height: 20rem;
+    width: 35rem;
+    margin-left: 20px;
+  }
+  .textCardImg img {
+    height: 8rem;
+    width: 8rem;
+    box-shadow: 10px 5px 5px #272F25;
+    
+    /* padding: 5px; */
+}
+}
+/* 3 break points are required */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
